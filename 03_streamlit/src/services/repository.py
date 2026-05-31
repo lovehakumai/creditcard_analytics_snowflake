@@ -6,7 +6,5 @@ session = get_active_session()
 # get data from specific Table
 @st.cache_data(max_entries = 3)
 def get_target_data(db_name, schema_name, table_name):
-    sql = "SELECT * FROM ?.?.?"
-    df_pd = session.sql(sql, params=[1: db_name, 2: schema_name, 3: table_name])
-    
+    df_pd = session.table([db_name, schema_name, table_name]).to_pandas()
     return df_pd 
