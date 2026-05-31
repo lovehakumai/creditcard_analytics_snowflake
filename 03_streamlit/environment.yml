@@ -1,0 +1,9 @@
+name: sf_env
+channels:
+  - snowflake
+dependencies:
+  - python=3.11  # ※現在Workspaceで選択しているバージョンに合わせて調整してください
+  - streamlit
+  - snowflake-snowpark-python
+  - seaborn
+  - matplotlib
