@@ -1,6 +1,4 @@
 import streamlit as st
-import seaborn as sns 
-import matplotlib.pyplot as plt 
 from src.services.repository import get_target_data
 
 def risk_view():

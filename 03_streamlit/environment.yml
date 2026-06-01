@@ -5,5 +5,3 @@ dependencies:
   - python=3.11
   - streamlit
   - snowflake-snowpark-python
-  - seaborn
-  - matplotlib
