@@ -7,3 +7,12 @@ entities:
       - pyproject.toml
       - app.py
       - .streamlit/config.toml
+    identifier:
+      database: PC_DBT_DB
+      schema: PUBLIC
+      name: STREAMLIT
+    title: 03_streamlit
+    query_warehouse: PC_DBT_WH
+    compute_pool: SYSTEM_COMPUTE_POOL_CPU
+    run_mode: SpcsOnly
+    execute_as: OWNER
